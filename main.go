@@ -3,7 +3,7 @@ package main
 import (
 	"unitag/handlers"
 
-	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo"
 )
 
 func main() {
