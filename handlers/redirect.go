@@ -3,6 +3,7 @@ package handlers
 import (
 	"net/http"
 	"strings"
+	"unitag/constants"
 	"unitag/utils"
 
 	"github.com/labstack/echo"
@@ -22,7 +23,7 @@ func RedirectHandler(c echo.Context) error {
 	userAgent := c.Request().Header.Get("User-Agent")
 
 	// Extract primary language (first 2 characters)
-	lang := "en" //const
+	lang := constants.DefaultLanguage
 	if len(langHeader) >= 2 {
 		lang = strings.ToLower(langHeader[:2])
 	}
