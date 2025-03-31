@@ -74,6 +74,13 @@ Example Request:
 GET http://localhost:3200/2bXk5q
 ```
 
+QR Id's
+```bash
+	2bXk5q : Unitag
+	ax3Goo : Google
+	ax4App : Apple
+```
+
 Example Responses:
 
 - Valid ID & English Language (Chrome) → Redirects to https://www.google.com/?hl=en
@@ -81,6 +88,23 @@ Example Responses:
 - Valid ID & French Language (Safari) → Redirects to https://www.apple.com/fr
 
 - Invalid ID (length not 6) → Returns 400 Bad Request with error JSON.
+
+## Testing with Postman
+
+When testing the API in Postman, you need to set the following headers:
+
+`Accept-Language`: The language you want to test (e.g., en, fr, es).
+
+`User-Agent`: Set this to the user-agent of the browser or device you want to test (e.g., Chrome, Safari, Android).
+
+Example Postman Request:
+URL: http://localhost:3200/2bXk5q
+
+Headers:
+
+Accept-Language: en (or fr, es)
+
+User-Agent: Chrome (or android, safari, iphone, ipad)
 
 ## Running Unit Tests
 
@@ -97,3 +121,8 @@ This will execute all test cases from the project.
 **[Rohit Shetty]**\
 🚀 **GitHub**: [rohit-shetty-94](https://github.com/rohit-shetty-94)\
 💎 **Email**: [shettyrohit61@gamil.com](mailto\:shettyrohit61@gamil.com)
+
+
+postman steps
+
+add google/apple/unitag code in readme
