@@ -54,7 +54,7 @@ The application will start on port 3200 by default.
 Try accessing the service using:
 
 ```bash
-http://localhost:3200/a2Rty1
+http://localhost:3200/2bXk5q
 ```
 
 It should redirect you based on the predefined rules.
