@@ -15,9 +15,12 @@ func GetRedirectURL(id, lang, userAgent string) string {
 	}
 
 	// User-Agent-based redirection
-	if strings.Contains(strings.ToLower(userAgent), "chrome") || strings.Contains(strings.ToLower(userAgent), "android") {
+	if strings.Contains(strings.ToLower(userAgent), "chrome") ||
+		strings.Contains(strings.ToLower(userAgent), "android") {
 		defaultURL = constants.IdentifierMap[id] + lang
-	} else if strings.Contains(strings.ToLower(userAgent), "safari") || strings.Contains(strings.ToLower(userAgent), "iphone") || strings.Contains(strings.ToLower(userAgent), "ipad") {
+	} else if strings.Contains(strings.ToLower(userAgent), "safari") ||
+		strings.Contains(strings.ToLower(userAgent), "iphone") ||
+		strings.Contains(strings.ToLower(userAgent), "ipad") {
 		defaultURL = constants.IdentifierMap[id]
 		if lang != constants.DefaultLanguage {
 			defaultURL += lang
