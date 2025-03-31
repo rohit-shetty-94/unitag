@@ -31,8 +31,8 @@ Ensure you have the following installed before proceeding:
 1️. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/unitag-url-redirector.git
-cd unitag-url-redirector
+git clone https://github.com/rohit-shetty-94/unitag.git
+cd unitag
 ```
 
 2️. Install Dependencies
