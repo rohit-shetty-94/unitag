@@ -14,7 +14,7 @@ func TestGetRedirectURL(t *testing.T) {
 		userAgent   string
 		expectedURL string
 	}{
-		{"a2Rty1", "en", "Chrome", "https://www.unitag.io/en"},
+		{"2bXk5q", "en", "Chrome", "https://www.unitag.io/en"},
 		{"ax3Goo", "fr", "Safari", "https://www.google.com/?hl=fr"},
 		{"ax4App", "es", "Ipad", "https://www.apple.com/es"},
 	}
